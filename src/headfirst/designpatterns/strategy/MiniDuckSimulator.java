@@ -6,16 +6,14 @@ package headfirst.designpatterns.strategy;
 public class MiniDuckSimulator {
 
     public static void main(String[] args) {
-		Mallard	mallard = new Mallard();
-		RubberDuck rubberDucky = new RubberDuck();
- 
-		Duck model = new ModelDuck();
-
+		Duck mallard = new Mallard();
 		mallard.performQuack();
-		rubberDucky.performQuack();
+		mallard.performFly();
    
-		model.performFly();	
+		Duck model = new ModelDuck();
+		model.performFly();
 		model.setFlyBehavior(new FlyWithJetPack());
 		model.performFly();
+
     }
 }
