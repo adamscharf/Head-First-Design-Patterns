@@ -1,3 +1,3 @@
 # Strategy Pattern
 
-![Strategy Pattern](strategy_pattern.png)
+![Strategy Pattern](/img/strategy_pattern.png)
