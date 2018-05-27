@@ -1,23 +1,17 @@
+package headfirst.designpatterns.strategy;
+
 /**
  * Duck
  */
-public class Duck {
-    public FlyBehavior flyBehavior;
-    public QuackBehavior quackBehavior;
+public abstract class Duck {
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
 
     public Duck() {}
 
-    public void display() {}
-
-    public void performFly() {
-        this.flyBehavior.fly();
-    }
-
-    public void performQuack() {
-        this.quackBehavior.quack();
-    }
-
-    // Setters
+    /*********
+     * Setters
+     *********/
 
     /**
      * @param flyBehavior the flyBehavior to set
@@ -31,6 +25,24 @@ public class Duck {
      */
     public void setQuackBehavior(QuackBehavior quackBehavior) {
         this.quackBehavior = quackBehavior;
+    }
+
+    /***********
+     * Methods *
+     ***********/
+
+    abstract void display();
+
+    public void performFly() {
+        this.flyBehavior.fly();
+    }
+
+    public void performQuack() {
+        this.quackBehavior.quack();
+    }
+
+    public void swim() {
+        System.out.println("All ducks swim!");
     }
     
 }

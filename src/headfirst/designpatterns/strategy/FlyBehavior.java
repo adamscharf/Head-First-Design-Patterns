@@ -1,3 +1,5 @@
+package headfirst.designpatterns.strategy;
+
 /**
  * FlyBehavior
  */
