@@ -1,5 +1,3 @@
 # Strategy Pattern
 
-![Strategy Pattern][strategy-pattern]
-
-[strategy-pattern]: ./strategy pattern.png
+![Strategy Pattern](strategy_pattern.png)
